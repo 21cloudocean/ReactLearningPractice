@@ -23,6 +23,7 @@ function App() {
       });
     });
   }
+//用filter括号中也是function。这里delete的原理是把不是该id的items留下来。
 
   return (
     <div className="container">
@@ -44,6 +45,7 @@ function App() {
               onChecked={deleteItem}
               content={todoItem}
             />
+            //item删除后，index会自动变化，所以id也会自动变化。
           ))}
         </ul>
       </div>
